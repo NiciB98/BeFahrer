@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style1.css">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        
+        <header> 
+            <nav class="navbar">
+                <a class="nav-branding" href="index.html"><img src="img\BeFahrer_Logo.jpeg" alt="BeFahrer_Logo"></a>
+                        
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="fahrgemeinschaftgründen.html">Fahrgemeinschaft erstellen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fahrgemeinschaftfinden.html">Fahrgemeinschaft finden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Über Uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Anmelden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrieren.html">Registrieren</a>
+                    </li>
+                </ul>
+    
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+            </nav>
+    
+        </header>
+    
+
+  <main>
+
+      <div id="main">
+ 
+        <h1>Login</h1>
+        <br>
+        <label for="">E-Mail Adresse</label> <br>
+        <input id="LOG_email" type="email" > <br>
+    
+        <label for="">Passwort</label> <br>
+        <input id="LOG_password" type="password" > <br> <br>
+    
+        <button onclick="login()"> Login </button>
+    
+        <p id="nachricht"> </p>
+
+      </div>
+
+      <!-- 
+        https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+        <form id="form">
+            <label for="EMail_Address"> E-Mail Adresse </label>
+            <input type="email" name="EMail_Address" id="EMail_Address" />
+
+            <label for="User_Password"> Passwort </label>
+            <input type="password" name="User_Password" id="User_Password" />
+
+            <button id="SignIn_submit">Einloggen</button>
+
+            <span role="alert" id="SignIn_Error" aria-hidden="true"> Bitte füllen Sie alle Felder aus </span>
+            
+            <span role="alert" id="SignIn_Invalid" aria-hidden="true"> Ihre Eingabe ist ungültig </span>
+        
+        </form>-->
+
+     
+  </main>
+  
+  <footer>
+
+    
+    <div id="Username"> </div>    
+
+          
+  </footer>
+
+    <script src="js/script.js"></script> 
+    <script src="js/login.js"></script> 
+</body>
+</html>

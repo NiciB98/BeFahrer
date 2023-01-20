@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style1.css">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        
+        <header> 
+            <nav class="navbar">
+                <a class="nav-branding" href="index.html"><img src="img\BeFahrer_Logo.jpeg" alt="BeFahrer_Logo"></a>
+                        
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="fahrgemeinschaftgründen.html">Fahrgemeinschaft erstellen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fahrgemeinschaftfinden.html">Fahrgemeinschaft finden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Über Uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Anmelden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrieren.html">Registrieren</a>
+                    </li>
+                </ul>
+    
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+            </nav>
+    
+        </header>
+    
+     
+        <main>
+
+            <div id="main">
+       
+                <h1>Registrieren</h1>
+                <br>
+                <label for="vorname">Vorname</label> <br>
+                <input required type="text" id="Reg_vorname"> <br>
+
+                <label for="nachname">Nachname</label> <br>
+                <input required type="text" id="Reg_nachname"> <br>
+
+                <label for="benutzername">Benutzername</label> <br>
+                <input required type="text" id="Reg_benutzername"> <br>
+            
+                <label for="email">E-Mail Adresse</label> <br>
+                <input required type="email" id="Reg_email"> <br>
+            
+                <label for="password">Passwort</label> <br>
+                <input required type="password" id="Reg_password" minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Muss mindestens eine Zahl und einen Groß- und Kleinbuchstaben sowie
+                mindestens 8 oder mehr Zeichen enthalten"> <br>
+
+                <label for="short_desc">Short Description</label> <br>
+                <textarea required type="text" id="Reg_shortdescription" rows="4" cols="50" maxlength="100"></textarea> <br>
+
+                <label for="address">Adresse</label> <br>
+                <input required type="text" id="Reg_adresse"> <br>
+
+                <label for="plz">Postleitzahl</label> <br>
+                <input required type="text" id="Reg_postleitzahl"> <br>
+
+                <label for="stadt">Stadt</label> <br>
+                <input required type="text" id="Reg_stadt"> <br>
+                <br>
+                <button onclick="registrieren()" id="button-registrieren" > Registrieren </button>
+                <br><br>
+
+                <p id="nachricht"> </p>
+
+                <p>Bereits registriert? Jetzt <a href="login.html"> einloggen </a></p>
+            
+            </div>
+      
+           
+        </main>
+  
+  <footer>
+
+    <div id="Username"> </div>    
+
+          
+  </footer>
+  <script src="js/script.js"></script> 
+  <script src="js/registrieren.js"></script> 
+</body>
+</html>

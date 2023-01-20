@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header> 
+        <nav class="navbar">
+            <a class="nav-branding" href="index.html"><img src="img\BeFahrer_Logo.jpeg" alt="BeFahrer_Logo"></a>
+                    
+            <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="fahrgemeinschaftgründen.html">Fahrgemeinschaft erstellen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fahrgemeinschaftfinden.html">Fahrgemeinschaft finden</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Über Uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Anmelden</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registrieren.html">Registrieren</a>
+                        </li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="main">
+
+            <h1>Fahrgemeinschaft erstellen</h1><br>
+
+            <label for="">Startdatum</label><br>
+            <input type="date" id="CFGS_Datum"><br>
+            <label for="">Kosten [CHF]</label><br>
+            <input type="number" id="CFGS_Kosten" min="1" max="200" value="1">
+            <br><br>
+            <h3>Startort</h3>
+            
+            <label for="">Adresse</label> <br>
+            <input required type="text" id="CFGS_Sadresse"> <br>
+
+            <label for="">Postleitzahl</label> <br>
+            <input required type="text" id="CFGS_Spostleitzahl"> <br>
+
+            <label for="">Stadt</label> <br>
+            <input required type="text" id="CFGS_Sstadt"> <br><br>
+
+            <h3>Endort</h3>
+
+            <label for="">Adresse</label> <br>
+            <input required type="text" id="CFGS_Eadresse"> <br>
+
+            <label for="">Postleitzahl</label> <br>
+            <input required type="text" id="CFGS_Epostleitzahl"> <br>
+
+            <label for="">Stadt</label> <br>
+            <input required type="text" id="CFGS_Estadt"> <br><br> 
+
+            <label for="">Plätze</label>
+            <input type="number" id="CFGS_plaetze" size="1" value="">
+            <br><br>
+            <button onclick="FGSGruenden()" id="erstellen" type="submit"> erstellen </button>
+        </div>
+
+       
+    </main>
+    
+    <footer>
+
+        <div id="Username"> </div>    
+
+            
+    </footer>
+    <script src="js/script.js"></script> 
+    <script src="js/FGSGruenden.js"></script> 
+</body>
+
+</html>
